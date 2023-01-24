@@ -3,6 +3,7 @@ Practical Assignment 3. Bank campaign response.
 Using the hisotircal performance data from over 2 years of running various marketing campaigns, we were able to build a machine learning classifier model that helps identify top likely candidates with highest probability to respond to the campaign.
 
 While no single characteristic was able consistently predict likelyhood to respond (see correlation matrix below), having no credit in default, student and retired statuses have highest positive correlation w/ likelihood to accept the offer.
+
 <img width="639" alt="image" src="https://user-images.githubusercontent.com/63613300/214190655-c11a2ce0-2f61-43cc-9dc5-77c2f9b217d8.png">
 
 Given the imbalance of classes (over 80% of customers do NOT accept the offer), we choose AUC as the north start for model optimization (there is no strong preference for type I / type II error avoidance given the business problem at hand). After running multiple different models (KNN, Logistic Regression, Decision Tree, etc.), the model with optimal AUC on test data ended up being KNN. 
