@@ -6,6 +6,7 @@ While no single characteristic was able consistently predict likelyhood to respo
 <img width="639" alt="image" src="https://user-images.githubusercontent.com/63613300/214190655-c11a2ce0-2f61-43cc-9dc5-77c2f9b217d8.png">
 
 Given the imbalance of classes (over 80% of customers do NOT accept the offer), we choose AUC as the north start for model optimization (there is no strong preference for type I / type II error avoidance given the business problem at hand). After running multiple different models (KNN, Logistic Regression, Decision Tree, etc.), the model with optimal AUC on test data ended up being KNN. 
+
 <img width="467" alt="image" src="https://user-images.githubusercontent.com/63613300/214191380-3986a975-3e06-4a4f-8249-6f89220da8d1.png">
 
 Adjusting the classifier probability to account for class imbalance, we end up with the following confusion matrix:
